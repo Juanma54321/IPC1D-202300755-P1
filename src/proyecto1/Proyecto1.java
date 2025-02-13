@@ -49,7 +49,7 @@ public class Proyecto1 {
             System.out.println("1. Menu de palabras");
             System.out.println("2. Jugar");
             System.out.println("3. Terminar");
-            
+            System.out.println("ingrese un valor numerico****");
             
             
             menu1=scanner.nextInt();
@@ -69,6 +69,7 @@ public class Proyecto1 {
                                 System.out.println("2. Modificar palabras");
                                 System.out.println("3. Eliminar palabras");
                                 System.out.println("4. regresar");
+                                System.out.println("ingrese un valor numerico****");
                        
                                 menu1=scanner.nextInt();
                             
@@ -84,6 +85,7 @@ public class Proyecto1 {
                                             for (int i = 0; i < 4; i++) {
                                                 System.out.println((i+1)+". "+partidas[i]);
                                             }
+                                            System.out.println("ingrese un valor numerico****");
                                             contadorDinamico2= scanner.nextInt();
                                             contadorDinamico2=contadorDinamico2-1;
                                             System.out.println("Ingresa tu Nombre y tu carné");
@@ -92,6 +94,7 @@ public class Proyecto1 {
                                             partidasJugadas[contadorDinamico2]=0;
                                             erroresPartidas[contadorDinamico2]=0;
                                             System.out.println("cuantas palabras desea ingresar??");
+                                            System.out.println("ingrese un valor numerico****");
                                             n = scanner.nextInt();
                                             palabra= new String[n];
                                         }else if(entrada.equals("CARGAR")){
@@ -151,6 +154,7 @@ public class Proyecto1 {
                                 System.out.println("2. Modificar palabras");
                                 System.out.println("3. Eliminar palabras");
                                 System.out.println("4. regresar");
+                                System.out.println("ingrese un valor numerico****");
                     
                                 menu1 = scanner.nextInt();
                        
@@ -168,6 +172,7 @@ public class Proyecto1 {
                                             for (int i = 0; i < 4; i++) {
                                                 System.out.println((i+1)+". "+partidas[i]);
                                             }
+                                            System.out.println("ingrese un valor numerico****");
                                             contadorDinamico2= scanner.nextInt();
                                             contadorDinamico2=contadorDinamico2-1;
                                             System.out.println("Ingresa tu Nombre y tu carné");
@@ -177,6 +182,7 @@ public class Proyecto1 {
                                             erroresPartidas[contadorDinamico2]=0;
                                             
                                             System.out.println("cuantas palabras desea ingresar??");
+                                            System.out.println("ingrese un valor numerico****");
                                             n = scanner.nextInt();
                                             palabra= new String[n];
                                         }
@@ -190,6 +196,7 @@ public class Proyecto1 {
                                             System.out.println("hola "+ partidas[contadorDinamico2]);
                                             
                                             System.out.println("cuantas palabras desea ingresar??");
+                                            System.out.println("ingrese un valor numerico****");
                                             n = scanner.nextInt();
                                             palabra= new String[n];
                                         }else{
@@ -218,7 +225,8 @@ public class Proyecto1 {
                                             for(int i =0;i<n;i++){
                                                 System.out.println(i+1+". "+palabra[i]);
                                             }
-                                            System.out.println("presiona "+(n+1)+" para salir");
+                                            System.out.println("ingrese un valor numerico****");
+                                            System.out.println("ingrese cualquier numero distinto para regresar");
 
                                             menu1 = scanner.nextInt();
                                             
@@ -244,11 +252,12 @@ public class Proyecto1 {
                                         for(int i =0;i<n;i++){
                                                 System.out.println(i+1+". "+palabra[i]);
                                             }
-                                            System.out.println("presiona "+(n+1)+" para salir");
+                                            System.out.println("ingrese un valor numerico****");
+                                            System.out.println("ingrese un numero distinto para salir");
 
                                         menu1 = scanner.nextInt();
                                         
-                                        //sistema para cambiar palabras
+                                        //sistema para eliminar palabras
                                             if (menu1<=n) {
                                                 palabra[menu1-1]="";
                                                 break;
@@ -276,6 +285,7 @@ public class Proyecto1 {
                         System.out.println("1. jugar");
                         System.out.println("2. Historial de partidas");
                         System.out.println("3. Regresar");
+                        System.out.println("ingrese un valor numerico****");
                         menu1=scanner.nextInt();
                         
                         switch(menu1){
